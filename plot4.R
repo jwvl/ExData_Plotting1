@@ -32,7 +32,7 @@ with(data, {
     lines(as.POSIXlt(data$DateAndTime),data$Sub_metering_1,col="black",type="l")
     lines(as.POSIXlt(data$DateAndTime),data$Sub_metering_2,col="red",type="l")
     lines(as.POSIXlt(data$DateAndTime),data$Sub_metering_3,col="blue",type="l")
-    legend("topright", col = c("black", "red", "blue"), lty=c(1,1), legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
+    legend("topright", col = c("black", "red", "blue"), lty=c(1,1), bty="n", legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
     
     plot(as.POSIXlt(data$DateAndTime),data$Global_reactive_power, xlab="datetime", ylab = "yLab4", type="l")
 })
